@@ -41,6 +41,8 @@ void setup() {
   digitalWrite(en2, 1);
   
 }
+BT_Serial.begin(9600); 
+delay(500);
 
 //===============================================================================
 //                         Bluetooth commands
