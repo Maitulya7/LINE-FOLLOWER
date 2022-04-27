@@ -79,7 +79,7 @@ if ((digitalRead(L_S) == 1)&&(digitalRead(C_S) ==0)&&(digitalRead(R_S) == 0)) {t
 if ((digitalRead(L_S) == 0)&&(digitalRead(C_S) == 1)&&(digitalRead(R_S) == 1)){turnRight();} // CENTER AND RIGHT SENSOR IS ON BLACK , AND LEFT SENSOR IS ON WHITE 
 if ((digitalRead(L_S) == 0)&&(digitalRead(C_S) == 0)&&(digitalRead(R_S) == 1)){turnRight();} // CENTER AND LEFT SENSOR IS ON WHITE , AND RIGHT SENSOR IS ON BLACK 
 
-if ((digitalRead(L_S) == 1)&&(digitalRead(C_S) == 1)&&(digitalRead(R_S) == 1)){Stop();} // LEFT , RIGHT AND CENTER SENSOR IS ON BLACK 
+if ((digitalRead(L_S) == 1)&&(digitalRead(C_S) == 1)&&(digitalRead(R_S) == 1)){forword();} // LEFT , RIGHT AND CENTER SENSOR IS ON BLACK 
 } 
 
 delay(10);
