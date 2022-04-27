@@ -16,6 +16,11 @@ int ir1=A0, ir2=A1, ir3=A2;
 #define ir_right A0
 #define ir_center A1
 
+int bt_data; // variable to receive data from the serial port
+int Speed = 130;  
+
+int mode=0;
+
 void setup() {
   // put your setup code here, to run once:
   pinMode(ir1, INPUT);
