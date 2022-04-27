@@ -59,7 +59,7 @@ if(bt_data > 20){Speed = bt_data;}
 else if(bt_data == 9){mode=0; Speed=0;}    //Manual Android Application Control Command
 
 analogWrite(en1, Speed); // Write The Duty Cycle 0 to 255 Enable Pin A for Motor1 Speed 
-analogWrite(enB, Speed); // Write The Duty Cycle 0 to 255 Enable Pin B for Motor2 Speed 
+analogWrite(en2, Speed); // Write The Duty Cycle 0 to 255 Enable Pin B for Motor2 Speed 
 
 if(mode==0){     
 //===============================================================================
