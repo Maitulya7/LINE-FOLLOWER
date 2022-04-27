@@ -69,7 +69,7 @@ if(mode==0){
 else if(bt_data == 2){backword();}  // if the bt_data is '2' the motor will Reverse
 else if(bt_data == 3){left_();}  // if the bt_data is '3' the motor will turn left
 else if(bt_data == 4){right_();} // if the bt_data is '4' the motor will turn right
-else if(bt_data == 5){Stop(); }     // if the bt_data '5' the motor will Stop
+
 
 //===============================================================================
 //                          Voice Control Command
