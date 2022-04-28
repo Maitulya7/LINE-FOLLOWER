@@ -56,7 +56,7 @@ if(bt_data > 20){Speed = bt_data;}
 }
 
      if(bt_data == 8){mode=1; Speed=130;} //Auto Line Follower Command  
-else if(bt_data == 9){mode=0; Speed=0;}    //Manual Android Application Control Command
+else if(bt_data == 9){mode=0; Stop();}    //Manual Android Application Control Command
 
 analogWrite(en1, Speed); // Write The Duty Cycle 0 to 255 Enable Pin A for Motor1 Speed 
 analogWrite(en2, Speed); // Write The Duty Cycle 0 to 255 Enable Pin B for Motor2 Speed 
@@ -69,6 +69,7 @@ if(mode==0){
 else if(bt_data == 2){backword();}  // if the bt_data is '2' the motor will Reverse
 else if(bt_data == 3){left_();}  // if the bt_data is '3' the motor will turn left
 else if(bt_data == 4){right_();} // if the bt_data is '4' the motor will turn right
+else if(bt_data ==5) {stop();}
 
 
 //===============================================================================
