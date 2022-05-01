@@ -72,14 +72,15 @@ else if(bt_data == 7){turnRight(); delay(400);  bt_data = 5;}
 //===============================================================================     
 if ((digitalRead(L_S) == 0)&&(digitalRead(C_S) == 1)&&(digitalRead(R_S) == 0)){forword();} // LEFT AND RIGHT SENSOR IN ON WHITE , AND CENTER SENSOR IS ON BLACK 
 
-if ((digitalRead(L_S) == 1)&&(digitalRead(C_S) == 1)&&(digitalRead(R_S) == 0)){turnLeft();} // LEFT AND CENTER SENSOR IS ON BLACK , AND RIGHT SENSOR IS ON WHITE 
-if ((digitalRead(L_S) == 1)&&(digitalRead(C_S) ==0)&&(digitalRead(R_S) == 0)) {turnLeft();} // RIGHT AND CENTER SENSOR IS ON WHITE , AND LEFT SENSOR IS ON BLACK 
+//if ((digitalRead(L_S) == 0)&&(digitalRead(C_S) == 0)&&(digitalRead(R_S) == 0)){forward();} // LEFT AND CENTER SENSOR IS ON BLACK , AND RIGHT SENSOR IS ON WHITE 
+//if ((digitalRead(L_S) == 1)&&(digitalRead(C_S) ==1)&&(digitalRead(R_S) == 1)) {forward();} // RIGHT AND CENTER SENSOR IS ON WHITE , AND LEFT SENSOR IS ON BLACK 
 
 
-if ((digitalRead(L_S) == 0)&&(digitalRead(C_S) == 1)&&(digitalRead(R_S) == 1)){turnRight();} // CENTER AND RIGHT SENSOR IS ON BLACK , AND LEFT SENSOR IS ON WHITE 
-if ((digitalRead(L_S) == 0)&&(digitalRead(C_S) == 0)&&(digitalRead(R_S) == 1)){turnRight();} // CENTER AND LEFT SENSOR IS ON WHITE , AND RIGHT SENSOR IS ON BLACK 
+if ((digitalRead(L_S) == 1)&&(digitalRead(C_S) == 1)&&(digitalRead(R_S) == 0)){turnLeft();} // CENTER AND RIGHT SENSOR IS ON BLACK , AND LEFT SENSOR IS ON WHITE 
+if ((digitalRead(L_S) == 1)&&(digitalRead(C_S) == 0)&&(digitalRead(R_S) == 0)){turnLeft();} // CENTER AND LEFT SENSOR IS ON WHITE , AND RIGHT SENSOR IS ON BLACK 
 
-if ((digitalRead(L_S) == 1)&&(digitalRead(C_S) == 1)&&(digitalRead(R_S) == 1)){forword();} // LEFT , RIGHT AND CENTER SENSOR IS ON BLACK 
+if ((digitalRead(L_S) == 0)&&(digitalRead(C_S) == 1)&&(digitalRead(R_S) == 1)){turnRight();} // LEFT , RIGHT AND CENTER SENSOR IS ON BLACK 
+if ((digitalRead(L_S) == 0)&&(digitalRead(C_S) == 0)&&(digitalRead(R_S) == 1)){turnRight();}
 } 
 
 delay(10);
